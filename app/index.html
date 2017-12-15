@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>ToDo DApp Demo</title>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+      <script src="./app.js"></script>
+   </head>
+   <body>
+      <div class="heading">
+        <h1>ToDo DApp</h1>
+             <br>
+              <h2>Example Truffle Dapp</h2>
+             <br>
+      </div>
+      <div id=form>
+           
+              <br><label for="id">Id:</label><input type="text" id="id" placeholder="e.g., 1"/>
+              <br><label for="task">Task:</label><input type="text" id="task" placeholder="e.g., Go to Gym"/>
+              <br><label for="time">Timing:</label><input type="text" id="time" placeholder="e.g., 6 am"/>
+             <div class="buttondiv">
+              <button id="addTask" onclick="App.addTask()">Add</button>
+             </div>
+      </div>
+      <div class="table-cont">
+          <table id="taskTable">
+             <thead>
+                <tr>
+                   <th>Id</th>
+                   <th>Task</th>
+                   <th>Timing</th>
+                </tr>
+             </thead>
+             <tbody>
+             </tbody>
+          </table>
+      </div>
+      <br>
+   </body>
+</html>
