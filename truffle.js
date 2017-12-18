@@ -9,12 +9,12 @@ var Web3 = require("web3");
 var FilterSubprovider = require('web3-provider-engine/subproviders/filters.js');
 
 // create wallet from existing private key
-var privateKey = '30205259a59f37f96a1cebc79bd3021496226e3986b44a655aea964e37556a65';
+var privateKey = '30205259a59f37f96a1cebc79bd3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 var wallet = ethereumjsWallet.fromPrivateKey(new Buffer(privateKey, "hex"));
 var address = "0x" + wallet.getAddress().toString("hex");
 
 // using ropsten testnet
-var providerUrl = "https://ropsten.infura.io/So4xqnHv6Ia90a00U67b";
+var providerUrl = "https://ropsten.infura.io/<your_access_token>";
 var engine = new ProviderEngine();
 
 // filters
